@@ -1,39 +1,33 @@
 {
     "schemaVersion": 1,
-    "id": "modid",
+    "id": "examplemod",
     "version": "${version}",
-  
     "name": "Example Mod",
     "description": "This is an example description! Tell everyone what your mod is about!",
     "authors": [
-      "Me!"
+      "Dodo Gang"
     ],
     "contact": {
-      "homepage": "https://fabricmc.net/",
-      "sources": "https://github.com/FabricMC/fabric-example-mod"
+      "homepage": "https://dodogang.net/",
+      "sources": "https://github.com/dodogang/MultiLoader-Template"
     },
-  
-    "license": "CC0-1.0",
-    "icon": "assets/modid/icon.png",
-  
+    "license": "MIT",
+    "icon": "assets/examplemod/icon.png",
     "environment": "*",
     "entrypoints": {
       "main": [
-        "com.example.examplemod.ExampleMod"
+        "net.dodogang.examplemod.ExampleModFabric"
       ]
     },
     "mixins": [
-      "modid.mixins.json"
+      "examplemod.mixins.json",
+      "examplemod-fabric.mixins.json"
     ],
-  
     "depends": {
       "fabricloader": ">=0.14",
       "fabric": "*",
       "minecraft": "1.19.x",
       "java": ">=17"
-    },
-    "suggests": {
-      "another-mod": "*"
     }
   }
   

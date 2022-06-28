@@ -1,0 +1,43 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "net.dodogang.examplemod",
+        "id": "examplemod",
+        "version": "${version}",
+        "metadata": {
+            "name": "Example Mod",
+            "description": "A short description of your mod.",
+            "contributors": {
+                "Dodo Gang": "Owner"
+            },
+            "contact": {
+                "homepage": "https://dodogang.net/",
+                "issues": "https://github.com/dodogang/MultiLoader-Template/issues",
+                "sources": "https://github.com/QuiltMC/MultiLoader-Template"
+            },
+            "icon": "assets/examplemod/icon.png"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "net.dodogang.examplemod.ExampleModQuilt"
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.17.0-"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=2.0.0-"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.19"
+            }
+        ]
+    },
+    "mixin": [
+        "examplemod.mixins.json",
+        "examplemod-quilt.mixins.json"
+    ]
+}
