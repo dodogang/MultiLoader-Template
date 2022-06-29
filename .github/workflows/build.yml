@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts
-          path: fabric/build/libs/
+          path: Fabric/build/libs/
 
       - name: Build Forge
         run: ./gradlew :Forge:build
@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts
-          path: forge/build/libs/
+          path: Forge/build/libs/
 
       - name: Build Quilt
         run: ./gradlew :Quilt:build
@@ -50,4 +50,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Artifacts
-          path: forge/build/libs/
+          path: Forge/build/libs/
